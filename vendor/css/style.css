@@ -124,10 +124,10 @@ ul li{
 
 .ren-logo{
     position: absolute;
-    width: 38vw;
+    width: 35vw;
     height:18vw;
     top: 17%;
-    left: 32%;
+    left: 33%;
 }
 .header-right{
 
@@ -303,7 +303,7 @@ ul li{
       }
       100%
       {
-          background: url('../../images/mobile-bg-01.png') no-repeat center;
+          background: url('../../images/mobile-light-01.png') no-repeat center;
           background-size: 100% 100vh;
       }
 
