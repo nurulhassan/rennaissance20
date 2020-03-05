@@ -136,13 +136,18 @@ ul li{
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
-.navi{
-  width:100%
+.nav-link{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.navi:hover{
-  background: #dbd8cb;
-  border-radius: 2px;
 
+.nav-link:hover{
+  background: #f6b500;
+    color: #333333;
+    border-radius: 4px;
 }
 @keyframes right-flag{
     0%
