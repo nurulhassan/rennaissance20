@@ -1,0 +1,374 @@
+html,body,*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* #loading {
+    background: url('../../images/color-bomb.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+} */
+.main{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    animation-name: main;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes main {
+  0%
+  {
+      background: url('../../images/background-01.png') no-repeat center;
+      background-size: 100% 100vh;
+  }
+  100%
+  {
+      background: url('../../images/bg-light-01.png') no-repeat center;
+      background-size: 100% 100vh;
+  }
+
+}
+.header{
+    width: 100%;
+    height:30%;
+    display: flex;
+}
+.header-left{
+    width:30%;
+
+    animation-name: left-flag;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+
+@keyframes left-flag
+{
+    0%
+    {
+        background: url('../../images/FD-left.png') no-repeat center;
+        background-size: contain;
+    }
+    100%
+    {
+        background: url('../../images/FL-left.png') no-repeat center;
+        background-size: contain;
+    }
+}
+.left-lamp{
+    width: 7vw;
+    height: 27vw;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    transform-origin: 50% 0;
+    -webkit-animation: left-lamp 3.5s ease-in-out forwards infinite;
+    animation: left-lamp 3.5s ease-in-out forwards infinite;
+}
+@keyframes left-lamp{
+
+    0%{transform: rotate(6deg);}
+    50%{transform: rotate(-2deg)}
+    100%{transform: rotate(6deg);}
+}
+.header-center{
+    width:40%;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li{
+    padding:9px;
+
+}
+
+.li1{
+  margin-top: 15px;
+}
+
+.jecrc-logo{
+  width:5vw;
+
+}
+
+
+.ren-logo{
+    position: absolute;
+    width: 38vw;
+    height:18vw;
+    top: 17%;
+    left: 32%;
+}
+.header-right{
+
+    width:30%;
+    animation-name: right-flag;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.navi{
+  width:100%
+}
+.navi:hover{
+  background: #000000;
+}
+@keyframes right-flag{
+    0%
+    {
+        background: url('../../images/FD-right.png') no-repeat center;
+        background-size: contain;
+    }
+    100%
+    {
+        background: url('../../images/FL-right.png') no-repeat center;
+        background-size: contain;
+    }
+
+}
+.right-lamp{
+    width: 7vw;
+    height: 27vw;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    transform-origin: 50% 0;
+    -webkit-animation: left-lamp 3.5s ease-in-out forwards infinite;
+    animation: left-lamp 3.5s ease-in-out forwards infinite;
+}
+.footer
+{
+    width: 100%;
+    height:50%;
+    display: flex;
+}
+.footer-left{
+    width: 25%;
+}
+.dates
+{
+    position: absolute;
+    bottom: 4vw;
+    left: 2%;
+    width: 15vw;
+    height: 10vw;
+}
+.footer-center{
+    width: 50%;
+    position: absolute;
+    left:27vw;
+}
+
+.footer-right{
+    width: 25%;
+}
+
+.explore{
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    bottom: 4vw;
+    right: 5%;
+}
+
+
+
+.r-logo{
+  display: none;
+}
+.elements{
+  position: relative;
+  width: 13vw;
+  height: 4vw;
+  top: 2vw;
+
+}
+
+.elements:hover{
+  transform: scale(1.2);
+}
+
+
+.elements-zarurat{
+    position: absolute;
+    background: url('../../images/color-bomb.png') no-repeat center;
+    background-size: contain;
+    text-align: center;
+    width: 15vw;
+    height: 8vw;
+    top:14vw ;
+
+}
+.elements-endeavour{
+  background: url('../../images/color-bomb.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  text-align: center;
+  top:22vw ;
+  height: 8vw;
+  width: 15vw;
+
+}
+.elements-quanta{
+  background: url('../../images/color-bomb.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  text-align: center;
+  top:14vw ;
+  left:17vw;
+  height: 8vw;
+  width: 15vw;
+
+}
+.elements-splash{
+  background: url('../../images/color-bomb.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  text-align: center;
+  top:22vw ;
+  left:17vw;
+  height: 8vw;
+  width: 15vw;
+
+}
+.elements-Ideapot{
+  background: url('../../images/color-bomb.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  text-align: center;
+  top:14vw ;
+  left:34vw;
+  height: 8vw;
+  width: 15vw;
+
+}
+.elements-Esummit{
+  background: url('../../images/color-bomb.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  text-align: center;
+  top:22vw ;
+  left:34vw;
+  height: 8vw;
+  width: 15vw;
+
+}
+@media only screen and (max-width:1024px){
+
+  .main{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      background:
+      url('../../images/mobile-bg-01.png') no-repeat center;
+      background-size: 100% 100vh;
+    }
+
+    .li1{
+        display: none;
+
+    }
+
+    .jecrc-logo
+    {
+        position: absolute;
+        left: 43vw;
+        width: 20vw;
+        height: 20vw;
+    }
+    .ren-logo{
+        position: absolute;
+
+        left: 13vw;
+        width: 80vw;
+        height: 50vw;
+    }
+    .center-element
+    {
+        position: absolute;
+        left: 25vw;
+        width:50vw ;
+        height: 25vw;
+    }
+
+    .footer-center{
+        position: absolute;
+        top: 78vw;
+        left: 13vw;
+
+    }
+
+
+    .elements{
+      width:25vw;
+      height:10vw;
+    }
+    .elements-quanta{
+
+      top:50vw;
+      left:0vw;
+
+    }
+
+    .elements-splash{
+      top:50vw;
+      left:50vw;
+    }
+
+    .elements-zarurat{
+
+      left:25vw;
+    }
+
+    .elements-endeavour{
+      top:30vw;
+      left:0vw;
+    }
+
+    .elements-Ideapot{
+      top:65vw;
+      left:25vw;
+    }
+
+    .elements-Esummit{
+      top:30vw;
+      left:50vw;
+    }
+
+    .r-logo{
+      position: absolute;
+      display: flex;
+      top:40vw;
+      left: 30vw;
+      width: 15vw;
+    }
+
+    .nav-link { color: #000000 !important; }
+
+
+
+}
