@@ -339,7 +339,8 @@ ul li{
     }
 
     .dates{
-      width: 20vw;
+      width: 25vw;
+      height: 10vw;
       left:-2vw;;
     }
     .center-element
