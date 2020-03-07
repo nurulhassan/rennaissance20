@@ -319,6 +319,12 @@ ul li{
 
     }
 
+    .modal-background{
+      background: url('../../images/color-splash.gif') no-repeat center;
+      background-size:contain;
+      background-repeat: no-repeat;
+    }
+
     .jecrc-logo
     {
         position: absolute;
