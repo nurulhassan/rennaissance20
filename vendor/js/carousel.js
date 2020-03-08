@@ -1,21 +1,24 @@
-$('#myCarousel').carousel({
-    interval: 5000
+const nextIcon = '<img src="images/right-arrow.svg" alt="right">';
+const prevIcon = '<img src="images/left-arrow.svg" alt="left" >';
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  autoplay: true,
+  margin:10,
+  nav: true,
+  navText: [
+  prevIcon,
+  nextIcon
+],
+  responsive:{
+    0:{
+      items:2
+    },
+    600:{
+      items:2
+    },
+    1000:{
+      items:3
+    }
+  }
 })
-
-$('.carousel .carousel-item').each(function() {
-    var minPerSlide = 4;
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    for (var i = 0; i < minPerSlide; i++) {
-        next = next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-
-        next.children(':first-child').clone().appendTo($(this));
-    }
-});
