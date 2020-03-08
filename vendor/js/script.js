@@ -3,19 +3,26 @@ $(document).ready(function(){
   		$('#Mymodal').modal('show')
 	});
 
+	var DocWidth = $(window).width()
+
 	$('.certificate_new').on('scroll',()=>{
 	$('.nav-pills').css("position","fixed")
-	$('.nav-pills').css("background-color","white")
-  $('.tab-content').css("margin-top","20px")
-	$('.nav-pills').css("width","50%")
-	if(DocWidth>=500){
-		$('.tab-content').css("margin-top","20px")
+	$('.nav-pills').css("background-color","orange")
+  $('.tab-content').css("margin-top","30px");
+	$(window).on('resize',function(){
+    if ((DocWidth>=981) || (DocWidth<981)) {
+      location.reload();  // refresh page
+    }
+	});
+	if(DocWidth>=981){
+		$('.nav-pills').css("width","50%")
 	}
 	else{
-		$('.tab-content').css("margin-top","53px")
+		$('.nav-pills').css("width","80%")
 	}
+
 })
 
-		
+
 
 });
