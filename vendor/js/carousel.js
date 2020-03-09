@@ -10,12 +10,14 @@ $('.owl-carousel').owlCarousel({
   prevIcon,
   nextIcon
 ],
+responsiveClass:true,
   responsive:{
     0:{
       items:2
     },
     600:{
       items:2
+
     },
     1000:{
       items:3
