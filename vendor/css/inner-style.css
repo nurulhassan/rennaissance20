@@ -4,11 +4,20 @@ html body *{
   overflow: hidden;
 }
 
+html {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 body{
 
-  background: url('../../images/quanta-web-bg-01.png') no-repeat center;
+  background: url('../../images/quanta-web-bg-01.png') no-repeat ;
   background-size: 100%  100vh;
+  background-attachment: fixed;
 }
 
 .header-center{
@@ -93,11 +102,25 @@ body{
   width: 30px;
 }
 
-@media only screen and (max-width:1024px){
+
+.gallery > div > a > img{
+  filter:grayscale(100%);
+}
+.gallery > div > a > img:hover{
+  filter:grayscale(0%);
+}
+.lb-nav a.lb-next{
+  opacity: 1;
+}
+.lb-nav a.lb-prev{
+  opacity: 1;
+}
+@media only screen and (max-width:576px){
 
   body{
     background: url('../../images/quanta-mob-bg-01.png') no-repeat center;
     background-size: 100% 100vh;
+    background-attachment: fixed;
   }
 
   .header-center > img{
@@ -108,6 +131,10 @@ body{
   .content-div{
 
   margin-top: 10%;
+  }
+
+  .off-3{
+    margin-left: 25%;
   }
 
 
