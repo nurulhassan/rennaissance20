@@ -5,8 +5,7 @@ html body *{
 }
 
 body{
-  width:100%;
-  height: 100%;
+
   background: url('../../images/quanta-web-bg-01.png') no-repeat center;
   background-size: 100%  100vh;
 }
@@ -97,7 +96,7 @@ body{
 
   body{
     background: url('../../images/quanta-mob-bg-01.png') no-repeat center;
-    background-size: 100% 100%;
+    background-size: 100% 100vh;
   }
 
   .header-center > img{
@@ -110,9 +109,7 @@ body{
   margin-top: 10%;
   }
 
-  .event-name{
-    margin-top: 10%;
-  }
+
 
 
 
