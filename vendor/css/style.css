@@ -5,6 +5,7 @@ html,body,*
     box-sizing: border-box;
 }
 
+
 /* #loading {
     background: url('../../images/color-bomb.gif') no-repeat center center;
     position: absolute;
@@ -16,7 +17,7 @@ html,body,*
 } */
 .main{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     animation-name: main;
     animation-duration: 3s;
@@ -246,7 +247,7 @@ ul li{
 
 }
 .elements-quanta{
-  background: url('../../images/color-bomb.png') no-repeat center;
+  background: url('../../images/quanta-bg.png') no-repeat center;
   background-size: contain;
   position: absolute;
   text-align: center;
@@ -257,7 +258,7 @@ ul li{
 
 }
 .elements-splash{
-  background: url('../../images/color-bomb.png') no-repeat center;
+  background: url('../../images/splash-bg.png') no-repeat center;
   background-size: contain;
   position: absolute;
   text-align: center;
@@ -295,9 +296,7 @@ ul li{
       width: 100%;
       height: 100vh;
       position: absolute;
-      background:
 
-      background-size: 100% 100vh;
     }
 
     @keyframes main {
@@ -305,18 +304,29 @@ ul li{
       {
           background: url('../../images/mobile-bg-01.png') no-repeat center;
           background-size: 100% 100vh;
+          background-attachment: fixed;
       }
       100%
       {
           background: url('../../images/mobile-light-01.png') no-repeat center;
           background-size: 100% 100vh;
+          background-attachment: fixed;
       }
 
     }
 
+
+
+
     .li1{
         display: none;
 
+    }
+
+    .modal-background{
+      background: url('../../images/color-splash.gif') no-repeat center;
+      background-size:contain;
+      background-repeat: no-repeat;
     }
 
     .jecrc-logo
@@ -339,7 +349,8 @@ ul li{
     }
 
     .dates{
-      width: 20vw;
+      width: 32vw;
+      height: 20vw;
       left:-2vw;;
     }
     .center-element
@@ -359,6 +370,7 @@ ul li{
 
 
     .elements{
+      position: relative;
       width:25vw;
       height:10vw;
     }
@@ -394,12 +406,29 @@ ul li{
       left:50vw;
     }
 
+    @keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
     .r-logo{
       position: absolute;
       display: flex;
       top:40vw;
       left: 30vw;
       width: 15vw;
+      
+    }
+
+    .r-animate{
+      animation: zoominoutsinglefeatured 1s infinite ;
     }
 
     .nav-link { color: #000000 !important; }

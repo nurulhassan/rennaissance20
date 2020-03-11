@@ -1,0 +1,144 @@
+html body *{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+body{
+
+  background: url('../../images/quanta-web-bg-01.png') no-repeat ;
+  background-size: 100%  100vh;
+  background-attachment: fixed;
+}
+
+.header-center{
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.header-center > img{
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.event-name{
+  text-align: center;
+}
+
+
+.event-name > img{
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.header-left{
+  animation-name: left-flag;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes left-flag
+{
+    0%
+    {
+        background: url('../../images/FD-left.png') no-repeat center;
+        background-size: contain;
+    }
+    100%
+    {
+        background: url('../../images/FL-left.png') no-repeat center;
+        background-size: contain;
+    }
+}
+
+.header-right{
+
+    animation-name: right-flag;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes right-flag{
+    0%
+    {
+        background: url('../../images/FD-right.png') no-repeat center;
+        background-size: contain;
+    }
+    100%
+    {
+        background: url('../../images/FL-right.png') no-repeat center;
+        background-size: contain;
+    }
+
+}
+
+.nav.nav-pills{
+  margin-top: 50px;
+}
+.tab-content{
+  max-height: 300px;
+  overflow-y: auto;
+  bac
+
+}
+
+
+
+.owl-prev{
+  width: 30px;
+}
+
+.owl-next{
+  width: 30px;
+}
+
+
+.gallery > div > a > img{
+  filter:grayscale(100%);
+}
+.gallery > div > a > img:hover{
+  filter:grayscale(0%);
+}
+.lb-nav a.lb-next{
+  opacity: 1;
+}
+.lb-nav a.lb-prev{
+  opacity: 1;
+}
+@media only screen and (max-width:576px){
+
+  body{
+    background: url('../../images/quanta-mob-bg-01.png') no-repeat center;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+  }
+
+  .header-center > img{
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .content-div{
+
+  margin-top: 10%;
+  }
+
+  .off-3{
+    margin-left: 25%;
+  }
+
+
+
+
+
+  }
