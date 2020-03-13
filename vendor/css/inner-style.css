@@ -90,6 +90,10 @@ body{
   animation-iteration-count: infinite;
 }
 
+.departments > div:hover{
+  transform: scale(1.2);
+}
+
 @keyframes left-flag
 {
     0%
